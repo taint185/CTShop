@@ -21,11 +21,20 @@ namespace CTShop
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Scripts/main.js",
+                      "~/Scripts/script.slider.js",
+                      "~/Scripts/sticky.js",
+                      "~/Scripts/jquery.easing.1.3.min.js",
+                      "~/Scripts/bxsslider.min.js",
+                      "~/Scripts/owl.carousel.min.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/responsive.css",
+                      "~/Content/style.css",
+                      "~/Content/owl.carousel.css",
+                      "~/Content/font-awesome.min.css"));
         }
     }
 }
