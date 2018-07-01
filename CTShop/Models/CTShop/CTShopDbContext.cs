@@ -1,4 +1,4 @@
-﻿s
+﻿
 namespace CTShop.Models
 {
     using System;

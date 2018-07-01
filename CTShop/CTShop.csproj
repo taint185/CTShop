@@ -155,41 +155,60 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="Models\CTShop\ActionRoles.cs" />
+    <Compile Include="Models\CTShop\Categories.cs" />
+    <Compile Include="Models\CTShop\CTShopDbContext.cs" />
+    <Compile Include="Models\CTShop\Customers.cs" />
+    <Compile Include="Models\CTShop\MasterRoles.cs" />
+    <Compile Include="Models\CTShop\Masters.cs" />
+    <Compile Include="Models\CTShop\OrderDetails.cs" />
+    <Compile Include="Models\CTShop\Orders.cs" />
+    <Compile Include="Models\CTShop\Products.cs" />
+    <Compile Include="Models\CTShop\Roles.cs" />
+    <Compile Include="Models\CTShop\Suppliers.cs" />
+    <Compile Include="Models\CTShop\WebActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
+    <Content Include="images\brand1.png" />
+    <Content Include="images\brand2.png" />
+    <Content Include="images\brand3.png" />
+    <Content Include="images\brand4.png" />
+    <Content Include="images\brand5.png" />
+    <Content Include="images\brand6.png" />
+    <Content Include="images\crossword.png" />
+    <Content Include="images\h4-slide.png" />
+    <Content Include="images\h4-slide2.png" />
+    <Content Include="images\h4-slide3.png" />
+    <Content Include="images\h4-slide4.png" />
+    <Content Include="images\h4-slide7.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\product-1.jpg" />
+    <Content Include="images\product-2.jpg" />
+    <Content Include="images\product-3.jpg" />
+    <Content Include="images\product-4.jpg" />
+    <Content Include="images\product-5.jpg" />
+    <Content Include="images\product-6.jpg" />
+    <Content Include="images\product-thumb-1.jpg" />
+    <Content Include="images\product-thumb-2.jpg" />
+    <Content Include="images\product-thumb-3.jpg" />
+    <Content Include="images\product-thumb-4.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </None>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -218,6 +237,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Utils\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
